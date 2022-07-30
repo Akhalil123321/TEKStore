@@ -19,9 +19,9 @@ export default function Cards(props){
     }
 return(
     
-        <div className='cart-cards'>
-                <img src={`./images/products/${props.img}`} className='cart-prop'/>
-                <div className='card-ditailes'>
+        <div className='cart-cards-cont'>
+                <img src={`./images/products/${props.img}`} className='cart-cont-img'/>
+                <div className='cart-ditailes'>
                 <div className='cart-state'>
                     <h4 className='cart-content-name'>{props.name}</h4>
                     <img src={`./images/${heartIcon}`} className='cart-heart' onClick={toggleFavorite}/>

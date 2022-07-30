@@ -15,7 +15,7 @@ export default function Header() {
             <li>
                 <Link to="/Cart" className="link-color">
                     <div className='cart-area'>
-                        Cart({cartNumber})
+                        <span className="cart-word">Cart({cartNumber})</span>
                         <img src='./images/cart.png' alt='' className='cart-img'/>
                     </div>
                 </Link>
