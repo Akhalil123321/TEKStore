@@ -4,6 +4,10 @@ import FavData from '../data/favoritesData'
 
 
 export default function Favorites() {
+    function clearFavorits(){
+        localStorage.setItem('favorite',JSON.stringify([]))
+        window.location.reload();
+    }
     const favPack = FavData.map(favItem =>{
         return<Fav
         key={favItem.id}
@@ -16,6 +20,8 @@ export default function Favorites() {
         <div className='Cart-cont'> 
         {favPack}
         </div>
+        
+        <button className='clear-fav-btn' onClick={clearFavorits}>clear Saved products</button>
     </div>
     );
 }

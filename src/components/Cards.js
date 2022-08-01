@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unreachable */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import { Link } from "react-router-dom";
@@ -5,12 +7,22 @@ import RateStars from './RateStars'
 import CartData from '../data/CartData'
 import DitailesData from '../data/DeatailesData'
 import FavoritesData from '../data/favoritesData'
+// import cart items
+const cartStoarge=JSON.parse(localStorage.getItem('cart'))
+    for(let i=0; i < cartStoarge.length;i++){
+    CartData.push(cartStoarge[i])
+}
+// import favourits items
+const favoriteStorge=JSON.parse(localStorage.getItem('favorite'))
+    for(let i=0; i < favoriteStorge.length;i++){
+        FavoritesData.push(favoriteStorge[i])
+}
 
 export default function Cards(props){
     const [favorite, setFavorite] = React.useState({
         isFavorite: false
     })
-    
+
     let heartIcon = favorite.isFavorite ? "heart fill2.png" : "heart empty.png"
     
     function toggleFavorite() {
@@ -22,10 +34,12 @@ export default function Cards(props){
         })
         const favoritesData = FavoritesData
         favoritesData.push(props)
+        localStorage.setItem('favorite',JSON.stringify(favoritesData))
     }
     function addToCart(){
         const cartData = CartData
         cartData.push(props)
+        localStorage.setItem('cart',JSON.stringify(CartData))
     }
     function showDitailes(){
         const ditailesData = DitailesData
@@ -55,3 +69,4 @@ return(
         </div>
 )
 }
+
