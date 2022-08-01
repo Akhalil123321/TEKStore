@@ -8,16 +8,18 @@ import CartData from '../data/CartData'
 import DitailesData from '../data/DeatailesData'
 import FavoritesData from '../data/favoritesData'
 // import cart items
+if (localStorage.getItem('cart')){
 const cartStoarge=JSON.parse(localStorage.getItem('cart'))
     for(let i=0; i < cartStoarge.length;i++){
     CartData.push(cartStoarge[i])
-}
+}}
+if(localStorage.getItem('favorite')){
 // import favourits items
 const favoriteStorge=JSON.parse(localStorage.getItem('favorite'))
     for(let i=0; i < favoriteStorge.length;i++){
         FavoritesData.push(favoriteStorge[i])
 }
-
+}
 export default function Cards(props){
     const [favorite, setFavorite] = React.useState({
         isFavorite: false
