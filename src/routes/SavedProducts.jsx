@@ -20,7 +20,6 @@ export default function Favorites() {
         <div className='Cart-cont'> 
         {favPack}
         </div>
-        
         <button className='clear-fav-btn' onClick={clearFavorits}>clear Saved products</button>
     </div>
     );
