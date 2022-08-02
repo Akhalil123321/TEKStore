@@ -143,7 +143,7 @@
             padding: 10px 0;
         }
         .cart-area{
-            margin: auto;
+            margin:8px auto;
         }
         .cart-word{
             margin:0 0 0 auto;
@@ -153,7 +153,7 @@
             width: 20px;
         }
         .sign-btn{
-            margin: auto;
+            margin: 8px auto;
             font-size: 1.2rem;
             padding: .5rem 2rem;
             background-color: #0cc4d1;
@@ -496,6 +496,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 .footer-title{
     margin: auto;
@@ -521,9 +523,9 @@
 }
 .sign-in-card{
     width: 50%;
-    height: 55vh;
+    height: 50vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin:40px auto;
+    margin: 10vh auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -577,6 +579,8 @@ width: 100%;
 @media screen and (max-width:700px) {
     .sign-in-card{
         width: 90%;
+        margin:15vh auto ; 
+        height: 40vh;
     }
 }
 
@@ -588,7 +592,7 @@ width: 100%;
 }
 .sign-up-card{
     width: 50%;
-    height: 80vh;
+    height: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin:40px auto;
     border-radius: 20px;
@@ -661,6 +665,7 @@ width: 100%;
 @media screen and (max-width:700px) {
     .sign-up-card{
         width: 90%;
+        height: 70%;
     }
 }
 /*end of sign up*/
