@@ -17,10 +17,10 @@ export default function Favorites() {
     return (
     <div>
         <Header/>
-        <div className='Cart-cont'> 
+        <div className='fav-cont'> 
         {favPack}
-        </div>
         <button className='clear-fav-btn' onClick={clearFavorits}>clear Saved products</button>
+        </div>
     </div>
     );
 }

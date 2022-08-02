@@ -10,33 +10,30 @@ export default function Header() {
         console.log(toggleList);
     }
     const headList = toggleList ? 'head-list-open' : 'head-list'
-    function closeList(){
-        setToggleList(false)
-    }
     return(
     <div className='head-bar'>
         <Link to="/Main" className='logo-img'><img src='./images/tek logo.png' className='logo-img' alt=''/></Link>
         <ul className={headList}>
-            <li><Link to="/Main" className="link-color" onClick={closeList}>Home</Link></li>
+            <Link to="/Main" className="link-color" ><li>Home</li></Link>
             <hr className="line"/>
-            <li><Link to="/Offers" className="link-color" onClick={closeList}>Offers</Link></li>
+            <Link to="/Offers" className="link-color" ><li>Offers</li></Link>
             <hr className="line"/>
-            <li><Link to="/Savedproducts" className="link-color" onClick={closeList}>Saved products</Link></li>
+            <Link to="/Savedproducts" className="link-color" ><li>Saved products</li></Link>
             <hr className="line"/>
-            <li><Link to="/Orders" className="link-color" onClick={closeList}>Orders</Link></li>
+            <Link to="/Orders" className="link-color" ><li>Orders</li></Link>
             <hr className="line"/>
             <div className='right-head'>
-            <li>
-                <Link to="/Cart" className="link-color" onClick={closeList}>
+            <Link to="/Cart" className="link-color" >
+                <li>
                     <div className='cart-area'>
                         <span className="cart-word">Cart({cartNumber})</span>
                         <img src='./images/cart.png' alt='' className='cart-img'/>
                     </div>
-                </Link>
-            </li>
+                </li>
+            </Link>
             <hr className="line"/>
             <li>
-                <Link to="/Signin" className="link-color" onClick={closeList}>
+                <Link to="/Signin" className="link-color" >
                     <button className='sign-btn'>sign in</button>
                 </Link>
             </li>

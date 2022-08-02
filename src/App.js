@@ -30,6 +30,7 @@ const ComputerPack = ComputerData.map(computerTtem =>{
 return(
     <div className='all-page'>
         <Header/>
+        <img src='./images/cover image.jpg' className='header-img' alt=''/>
         <Bar title='LapTops'/>
         <div className='cont'> 
         {LapPack}

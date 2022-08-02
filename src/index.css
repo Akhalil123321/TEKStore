@@ -12,6 +12,7 @@
     height: 100vh;
     font-family: 'Inter',sans-serif;
     background-color: rgb(223, 234, 245);
+    padding-top: 8vh;
     }
 
     /*head bar*/
@@ -78,6 +79,8 @@
     }
     .link-color{
     color: rgb(223, 232, 243);
+    display: flex;
+    margin: auto;
     }
     .line{
         display: none;
@@ -96,16 +99,14 @@
         cursor: pointer;
         display: none;
     }
+    .head-bar{
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        left: 0;
+    }
     @media screen and (max-width:700px) {
-        body{
-            padding-top: 8vh;
-        }
-        .head-bar{
-            position: fixed;
-            top: 0;
-            z-index: 1;
-            left: 0;
-        }
+
         .list-icon{
             display: block;
         }
@@ -126,7 +127,6 @@
             height:calc(100% - 9vh) ;
             margin: 0 auto;
             text-align: center;
-            align-items: center;
             padding: 0;
             width: 40%;
             top: 9vh;
@@ -171,9 +171,15 @@
 
     }
     /* end of head bar */
-
     /*cards*/
-
+    .header-img{
+        width: 100%;
+        height: 70vh;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+    }
     /* products */
     .lap-bar{
         height: 7vh;
@@ -184,6 +190,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        margin-top: -4px;
     }
     .lap-top{
         margin: auto 0;
@@ -311,17 +318,38 @@
     margin-right: 10px;
     font-size: 2vmin;
     }
+    @media screen and (max-width:700px) {
+        .lap-cards{
+            width: 40%;
+        }
+        .lap-name{
+            font-size: 3vw;
+            padding-left: 3px;
+        }
+        .current-price{
+            font-size: 3vmin;
+        }
+        .old-price{
+            font-size: 3vmin;
+        }
+        .card-cart>img{
+            width: 2.5vmin;
+        }
+        .card-cart>h4{
+        font-size: 3vmin;
+    }}
 
 
     /*Cart*/
     .cart-cards-cont{
         display: flex;
         background-color: #F2F2F2;
-        margin: 20px 4vw;
+        width: 90%;
         border-radius: 20px;
         padding: 15px;
         position: relative;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 20px auto;
     }
     .cart-cont-img{
         border-radius: 20px;
@@ -341,11 +369,11 @@
         display: flex;
         flex-direction: column;
         width:70% ;
+        margin-left: 10px;
     }
     .cart-discription{
         width: 100%;
     }
-
     .cart-heart{
         height: 3vw;
         max-height: 20px;
@@ -367,26 +395,24 @@
     .buy-now{
         background-color: rgb(255,164,28);
         border: none;
-        margin: auto;
-        width: 67%;
         font-size: 2vmin;
         border-radius: 50px;
-        position: absolute;
         bottom: 2vw;
         height: 5vmin;
         cursor: pointer;
+        margin: auto;
+        width: 100%;
     }
     .checkout{
         display: flex;
         gap: 20px;
+        width: 100vw;
         margin:30px auto ;
         padding-bottom: 50px;
-        justify-content: center;
+        justify-content: space-around;
     }
     .checkout-btn{
-        padding: 15px;
-        margin: 0 0 0 auto;
-        width: 40vw;
+        width: 45%;
         border-radius: 50px;
         border: 1px solid rgb(201, 181, 0);
         background-color:#F7CA00;
@@ -399,9 +425,8 @@
     .clCart-btn{
         grid-column: 1 /-1;
         padding: 15px;
-        margin: 0 auto 0 0;
         border-radius: 50px;
-        width: 40vw;
+        width: 45%;
         border: 1px solid rgb(201, 181, 0);
         background-color:rgb(187, 86, 4);
         font-size: 2vmin;
@@ -412,11 +437,17 @@
     }
 
     /* saved product */
+    .fav-cont{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+    }
     .favurite-card-cart{
         display: flex;
         border: none;
         margin: auto;
-        width: 67%;
+        width: 64%;
         font-size: 2vmin;
         border-radius: 50px;
         position: absolute;
@@ -427,7 +458,7 @@
         cursor: pointer;
     }
     .favurite-card-cart>img{
-    width: 2.5vmin;
+        width: 2.5vmin;
         margin: auto;
         margin-left: 0;
     }
