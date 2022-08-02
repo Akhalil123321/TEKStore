@@ -10,7 +10,9 @@ export default function Favurites(props){
     }
 return(
         <div className='cart-cards-cont'>
-                <img src={`./images/products/${props.img}`} className='cart-cont-img'/>
+                <Link to="/Ditailes" className='cart-cards-cont-link'>
+                    <img src={`./images/products/${props.img}`} className='cart-cont-img'/>
+                </Link>
                 <div className='cart-ditailes'>
                 <div className='cart-state'>
                     <h4 className='cart-content-name'>{props.name}</h4>

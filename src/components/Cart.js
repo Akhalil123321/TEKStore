@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import FavoritesData from '../data/favoritesData'
+import { Link } from "react-router-dom";
 export default function Cards(props){
     const [favorite, setFavorite] = React.useState({
         isFavorite: false
@@ -13,14 +14,18 @@ export default function Cards(props){
             return{
             isFavorite: !prevFavorite.isFavorite
             }
+            
         })
         const favoritesData = FavoritesData
         favoritesData.push(props)
+        localStorage.setItem('favorite',JSON.stringify(favoritesData))
     }
 return(
     
         <div className='cart-cards-cont'>
-                <img src={`./images/products/${props.img}`} className='cart-cont-img'/>
+                <Link to="/Ditailes" className='cart-cards-cont-link'>
+                    <img src={`./images/products/${props.img}`} className='cart-cont-img'/>
+                </Link>
                 <div className='cart-ditailes'>
                 <div className='cart-state'>
                     <h4 className='cart-content-name'>{props.name}</h4>

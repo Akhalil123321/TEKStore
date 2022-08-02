@@ -354,9 +354,14 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin: 20px auto;
     }
-    .cart-cont-img{
+    .cart-cards-cont-link{
         border-radius: 20px;
         width: 30%;
+        margin: auto;
+    }
+    .cart-cont-img{
+        border-radius: 20px;
+        width: 100%;
         margin: auto;
         }
     .cart-content-name{
@@ -723,15 +728,18 @@ cursor: pointer;
         }
         .card-dit-img{
             width: 20vw;
-            height: 15vh;
+            height: 20vw;
             object-fit: cover;
             margin: auto;
             margin-top: 10px;
             cursor: pointer;
+            object-fit:fill;
         }
         .card-dit-img-large-cont{
             width: 100%;
+            height: auto;
             margin: auto;
+            padding: 40px 0;
         }
         .card-dit-img-large{
             margin: auto;

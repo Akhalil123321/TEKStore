@@ -5,7 +5,7 @@ export default function Oreders() {
     return (
     <div>
         <Header/>
-        <h2>Oreders</h2>
+        <h2>Orders</h2>
     </div>
     );
 }

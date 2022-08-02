@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
+import CartData from '../data/CartData'
 import FavoritesData from '../data/favoritesData'
 export default function Cards(props){
     
@@ -30,9 +31,17 @@ export default function Cards(props){
             return{
             isFavorite: !prevFavorite.isFavorite
             }
+            
         })
         const favoritesData = FavoritesData
         favoritesData.push(props)
+        localStorage.setItem('favorite',JSON.stringify(favoritesData))
+    }
+    function addToCart(){
+        alert('Added to cart')
+        const cartData = CartData
+        cartData.push(props)
+        localStorage.setItem('cart',JSON.stringify(CartData))
     }
     
 return(
@@ -59,7 +68,7 @@ return(
                     <h5 className='card-dit-old-price'>{props.oldPrise} $</h5>
                     <h5 className='card-dit-current-price'>{props.curruntPrise}<sup>{props.cents}</sup> $</h5>
                 </div>
-                <button className='card-dit-add-to-cart'>Add to cart</button>
+                <button className='card-dit-add-to-cart' onClick={addToCart}>Add to cart</button>
             </div>
         </div>
             
