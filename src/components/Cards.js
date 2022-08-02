@@ -20,6 +20,11 @@ const favoriteStorge=JSON.parse(localStorage.getItem('favorite'))
         FavoritesData.push(favoriteStorge[i])
 }
 }
+if(localStorage.getItem('detailes')){
+const detailStorge=JSON.parse(localStorage.getItem('detailes'))
+DitailesData.push(detailStorge[0])
+DitailesData.shift()
+}
 export default function Cards(props){
     const [favorite, setFavorite] = React.useState({
         isFavorite: false
@@ -47,6 +52,7 @@ export default function Cards(props){
         const ditailesData = DitailesData
         ditailesData.push(props)
         ditailesData.shift()
+        localStorage.setItem('detailes',JSON.stringify(DitailesData))
     }
 return(
         <div className='lap-cards'>

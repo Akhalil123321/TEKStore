@@ -1,7 +1,6 @@
 import Ditailes from '../components/Detailes'
 import Header from '../components/Header'
 import DeatailesData from '../data/DeatailesData'
-import Footer from '../components/Footer'
 
 
 export default function Cart() {
@@ -18,7 +17,6 @@ export default function Cart() {
         <div className='card-Ditailes'> 
         {ditailesPack}
         </div>
-        <Footer/>
     </div>
     );
 }

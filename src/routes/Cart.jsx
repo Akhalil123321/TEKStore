@@ -1,7 +1,6 @@
 import Carte from '../components/Cart'
 import Header from '../components/Header'
 import CartData from '../data/CartData'
-import Footer from '../components/Footer'
 
 
 export default function Cart() {
@@ -25,7 +24,6 @@ export default function Cart() {
             <button className='checkout-btn'>Proceed to checkout</button>
             <button className='clCart-btn' onClick={clearCart}>Clear cart</button>
         </div>
-        <Footer/>
     </div>
     );
 }
