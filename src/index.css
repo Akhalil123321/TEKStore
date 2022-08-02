@@ -1,5 +1,6 @@
     *{
     box-sizing: border-box;
+    font-family: Verdana, sans-serif;
 
     }
     body{
@@ -128,7 +129,7 @@
             margin: 0 auto;
             text-align: center;
             padding: 0;
-            width: 40%;
+            width: 50%;
             top: 9vh;
             list-style: none;
             border-top-left-radius: 10px;
@@ -143,7 +144,7 @@
             padding: 10px 0;
         }
         .cart-area{
-            margin:9px auto;
+            margin:10px auto;
         }
         .cart-word{
             margin:0 0 0 auto;
@@ -153,7 +154,7 @@
             width: 20px;
         }
         .sign-btn{
-            margin: 9px auto;
+            margin: 10px auto;
             font-size: 1.2rem;
             padding: .5rem 2rem;
             background-color: #0cc4d1;
@@ -643,3 +644,103 @@ width: 100%;
     width: 100vw;
 }
 /*end of offers*/
+/*card details*/
+.card-dit-container{
+padding: 30px;
+display: flex;
+height: 92vh;
+}
+.card-dit-img-container{
+    display: flex;
+    margin: auto;
+}
+.card-dit-img-small{
+display: flex;
+flex-direction: column;
+overflow: hidden;
+margin: auto 20px auto 0;
+
+}
+.card-dit-img{
+width: 130px;
+height: 100px;
+object-fit: cover;
+margin-top: 10px;
+cursor: pointer;
+}
+.card-dit-img-large-cont{
+    width: 500px;
+    height: 80vh;
+    margin: auto 0;
+    display: flex;
+}
+.card-dit-img-large{
+    max-width: 400px;
+    max-height: 60vh;
+    margin: auto;
+}
+.card-dit-information-cont{
+    width: calc(100vw -730px);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.card-dit-state{
+    display: flex;
+    flex-direction: row;
+}
+.card-dit-heart{
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin: auto 0 auto auto;
+    padding-right:10px;
+}
+.card-dit-add-to-cart{
+    background-color: rgb(39, 108, 236);
+    width: 80%;
+    border: none;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #F2F2F2;
+    font-size: 1rem;
+}
+@media screen and (max-width:700px) {
+    .card-dit-container{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        }
+        .card-dit-img-container{
+            flex-direction: column;
+        }
+        .card-dit-img-small{
+            flex-direction: row;
+        gap: 2vw;
+        margin: auto;
+        }
+        .card-dit-img{
+            width: 20vw;
+            height: 15vh;
+            object-fit: cover;
+            margin: auto;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .card-dit-img-large-cont{
+            width: 100%;
+            margin: auto;
+        }
+        .card-dit-img-large{
+            margin: auto;
+        }
+        .card-dit-information-cont{
+            width: 85%;
+        }
+        .card-dit-add-to-cart{
+            margin-bottom: 30PX;
+        }
+}
+/*end of card ditailes*/
