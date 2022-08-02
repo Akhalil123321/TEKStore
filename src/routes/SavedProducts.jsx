@@ -1,6 +1,8 @@
 import Fav from '../components/Favorites'
 import Header from '../components/Header'
 import FavData from '../data/favoritesData'
+import Footer from '../components/Footer'
+
 
 
 export default function Favorites() {
@@ -21,6 +23,7 @@ export default function Favorites() {
         {favPack}
         <button className='clear-fav-btn' onClick={clearFavorits}>clear Saved products</button>
         </div>
+        <Footer/>
     </div>
     );
 }

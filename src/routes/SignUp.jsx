@@ -1,11 +1,12 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Signup from '../components/SignUp'
 
-export default function Offers() {
+export default function SignUp() {
     return (
-    <div className='offers-cont'>
+    <div className='sign-up-cont'>
         <Header/>
-        <h2>Offers</h2>
+        <Signup/>
         <Footer/>
     </div>
     );

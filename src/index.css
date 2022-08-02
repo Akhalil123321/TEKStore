@@ -28,7 +28,7 @@
         width: 6vw;
         min-width:60px;
     }
-    .head-list{
+    .head-list,.head-list-open{
         list-style: none;
         display: flex;
         margin: auto 0 auto auto;
@@ -140,6 +140,7 @@
             margin: 0;
             padding: 0;
             width: 100%;
+            padding: 10px 0;
         }
         .cart-area{
             margin: auto;
@@ -154,12 +155,13 @@
         .sign-btn{
             margin: auto;
             font-size: 1.2rem;
-            padding: .5rem 3rem;
+            padding: .5rem 2rem;
+            background-color: #0cc4d1;
         }
         li{
             margin: 0 auto;
             width: 100%;
-            padding: 20px 0;
+            padding: 10px 0;
         }
         .line{
             width: 100%;
@@ -484,3 +486,186 @@
         margin:30px 20px;
     }
 }
+/*footer*/
+.footer-container{
+    text-align: center;
+    background-color:rgb(37, 37, 37);
+    margin-top: 30px;
+    height: 130px;
+    color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.footer-title{
+    margin: auto;
+    font-size: 5vmin;
+}
+.footer-copyright{
+    margin: auto;
+    font-size: 3vmin;
+}
+.footer-copyright>a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+.footer-copyright>a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+    cursor: pointer;
+}
+/*end of footer*/
+/*sign in*/
+.sign-in-cont{
+    width: 100vw;
+}
+.sign-in-card{
+    width: 50%;
+    height: 55vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:40px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+.email-container{
+width: 60%;
+}
+.sign-in-email{
+width: 100%;
+font-size: 1rem;
+margin: 0;
+padding :.5rem 0;
+}
+.sign-in-email-input{
+width: 100%;
+}
+.password-container{
+width: 60%;
+}
+.sign-in-password{
+width: 100%;
+font-size: 1rem;
+margin: 0;
+padding :.5rem 0;
+}
+.sign-in-password-input{
+width: 100%;
+}
+.sign-in-card-in-btn{
+    background-color: rgb(39, 108, 236);
+    width: 40%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sign-in-card-up-btn{
+    width: 40%;
+}
+.sign-in-card-up-btn>button{
+    width: 100%;
+    background-color: rgb(48, 196, 97);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .sign-in-card{
+        width: 90%;
+    }
+}
+
+/*end of sign in*/
+
+/*sign up*/
+.sign-up-cont{
+    width: 100vw;
+}
+.sign-up-card{
+    width: 50%;
+    height: 80vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:40px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.frist-name-container{
+    width: 60%;
+}
+.sign-up-frist-name{
+    width: 100%;
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom:.5rem;
+}
+.sign-up-frist-name-input{
+    width: 100%;
+}
+.second-name-container{
+    width: 60%;
+}
+.sign-up-second-name{
+    width: 100%;
+    font-size: 1rem;
+    margin: 0;
+    padding :.5rem 0;
+}
+.sign-up-second-name-input{
+    width: 100%;
+}
+.sign-up-email{
+    width: 100%;
+    font-size: 1rem;
+    margin: 0;
+    padding :.5rem 0;
+
+}
+.sign-up-email-input{
+    width: 100%;
+
+}
+.sign-up-password{
+    width: 100%;
+    font-size: 1rem;
+    margin: 0;
+    padding :.5rem 0;
+}
+.sign-up-password-input{
+    width: 100%;
+
+}
+.sign-up-card-in-link{
+    width: 100%;
+    color: rgb(0, 89, 255);
+
+}
+.sign-up-card-up-btn{
+    width: 40%;
+    background-color: rgb(48, 196, 97);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:700px) {
+    .sign-up-card{
+        width: 90%;
+    }
+}
+/*end of sign up*/
+/*offers*/
+.offers-cont{
+    width: 100vw;
+}
+/*end of offers*/

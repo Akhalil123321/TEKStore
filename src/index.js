@@ -12,6 +12,7 @@ import Orders from './routes/Orders'
 import Cart from "./routes/Cart";
 import SignIn from './routes/SignIn'
 import Ditailes from './routes/Ditailes'
+import SignUp from './routes/SignUp'
 import './index.css'
 
 const root = ReactDOM.createRoot(
@@ -26,6 +27,7 @@ root.render(
       <Route path="Savedproducts" element={<SavedProducts />} />
       <Route path="Orders" element={<Orders />} />
       <Route path="Signin" element={<SignIn />} />
+      <Route path="Signup" element={<SignUp />} />
       <Route path="Cart" element={<Cart />} />
       <Route path="Ditailes" element={<Ditailes />} />
     </Routes>

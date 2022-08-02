@@ -1,9 +1,13 @@
 import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Signin from '../components/SignIn'
+
 export default function SignIn() {
     return (
-    <div>
+    <div className='sign-in-cont'>
         <Header/>
-        <h2>SignIn</h2>
+        <Signin/>
+        <Footer/>
     </div>
     );
 }
