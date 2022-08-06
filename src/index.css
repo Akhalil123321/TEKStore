@@ -134,6 +134,7 @@
             list-style: none;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
+            animation: openList 0.5s;
         }
         .right-head{
             display: flex;
@@ -171,7 +172,14 @@
             border-top: 2px solid rgba(207, 207, 207, 0.2);
             
         }
-
+    }
+    @keyframes openList {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 50%;
+        }
     }
     /* end of head bar */
     /*cards*/
@@ -448,8 +456,10 @@
     .fav-cont{
         display:flex;
         flex-direction: column;
-        width:100%;
+        width:100vw;
         justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
     .favurite-card-cart{
         display: flex;

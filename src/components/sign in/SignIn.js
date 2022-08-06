@@ -2,16 +2,19 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 export default function SignIn(){
+    // data stoarge form
     const [signInForms, setSignInForms] =React.useState(
         {
             email:'',
             password:''
         }
     )
+    //submit forms btn
     function handleSubmit(event) {
         event.preventDefault()
         alert(`Hello again! ${signInForms.email}`);
     }
+    // on change form area
     function signInHandleChange(event){
         const {name, value} = event.target
         setSignInForms(prevSignInForms => {
@@ -22,7 +25,6 @@ export default function SignIn(){
         })
     }
 return(
-    
         <form className='sign-in-card' onSubmit={handleSubmit}>
             <div className='email-container'>
                 <p className='sign-in-email'>E-mail</p>
@@ -34,7 +36,7 @@ return(
                 onChange={signInHandleChange}
                 value={signInForms.email}
                 />
-                </div>
+            </div>
             <div className='password-container'>
                 <p className='sign-in-password'>Password</p>
                 <input
@@ -45,9 +47,11 @@ return(
                 onChange={signInHandleChange}
                 value={signInForms.password}
                 />
-                </div>
-                <button className='sign-in-card-in-btn'>Sign In</button>
-                <Link to="/Signup" className='sign-in-card-up-btn'><button >Sign Up</button></Link>
-            </form>
+            </div>
+            <button className='sign-in-card-in-btn'>Sign In</button>
+            <Link to="/Signup" className='sign-in-card-up-btn'>
+                <button >Sign Up</button>
+            </Link>
+        </form>
 )
 }

@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 export default function SignUp(){
+    // data stoarge form
     const [signUpForms, setSignUpForms] =React.useState(
         {
             firstName:'',
@@ -26,9 +27,9 @@ export default function SignUp(){
             if(signUpForms.password===signUpForms.RePassword){
                 alert(`Submited!
                 Thanks ${signUpForms.firstName} ${signUpForms.lastName} for signing up`);
-                }else {
-                    alert('Passwords do not match')
-                }
+            }else {
+                alert('Passwords do not match')
+            }
             } 
         
 return(
@@ -44,8 +45,8 @@ return(
                 onChange={signUpHandleChange}
                 value={signUpForms.firstName}
                 />
-                </div>
-                <div className='second-name-container'>
+            </div>
+            <div className='second-name-container'>
                 <p className='sign-up-second-name'>Last Name</p>
                 <input
                 type='text'
@@ -55,7 +56,7 @@ return(
                 onChange={signUpHandleChange}
                 value={signUpForms.lastName}
                 />
-                </div>
+            </div>
             <div className='email-container'>
                 <p className='sign-up-email'>E-mail</p>
                 <input
@@ -66,7 +67,7 @@ return(
                 onChange={signUpHandleChange}
                 value={signUpForms.email}
                 />
-                </div>
+            </div>
             <div className='password-container'>
                 <p className='sign-up-password'>Password</p>
                 <input
@@ -77,8 +78,8 @@ return(
                 onChange={signUpHandleChange}
                 value={signUpForms.password}
                 />
-                </div>
-                <div className='password-container'>
+            </div>
+            <div className='password-container'>
                 <p className='sign-up-password'>Re-Password</p>
                 <input
                 type='password'
@@ -88,9 +89,11 @@ return(
                 onChange={signUpHandleChange}
                 value={signUpForms.RePassword}
                 />
-                </div>
-                <Link to="/Signin"><p className='sign-up-card-in-link'>already have an account?</p></Link>
-                <button className='sign-up-card-up-btn'>Sign Up</button>
-            </form>
+            </div>
+            <Link to="/Signin">
+                <p className='sign-up-card-in-link'>already have an account?</p>
+            </Link>
+            <button className='sign-up-card-up-btn'>Sign Up</button>
+        </form>
 )
 }

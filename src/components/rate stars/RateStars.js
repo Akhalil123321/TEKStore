@@ -102,12 +102,4 @@ export default function SetStars() {
                 
     )
 }
-/*css style 
-.star--info {
-    padding: 10px;
-}
 
-.star--favorite {
-    width: 25px;
-    cursor: pointer;
-}*/

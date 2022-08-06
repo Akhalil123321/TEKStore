@@ -1,5 +1,5 @@
-import Carte from '../components/Cart'
-import Header from '../components/Header'
+import Carte from '../components/cart/Cart'
+import Header from '../components/nav bar/Header'
 import CartData from '../data/CartData'
 
 

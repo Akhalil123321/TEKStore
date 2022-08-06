@@ -1,5 +1,5 @@
-import Ditailes from '../components/Detailes'
-import Header from '../components/Header'
+import Ditailes from '../components/detailes/Detailes'
+import Header from '../components/nav bar/Header'
 import DeatailesData from '../data/DeatailesData'
 
 

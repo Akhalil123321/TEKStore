@@ -1,5 +1,5 @@
-import Header from '../components/Header'
-import Signin from '../components/SignIn'
+import Header from '../components/nav bar/Header'
+import Signin from '../components/sign in/SignIn'
 
 export default function SignIn() {
     return (

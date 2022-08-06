@@ -1,5 +1,5 @@
-import Fav from '../components/Favorites'
-import Header from '../components/Header'
+import Fav from '../components/favourits/Favorites'
+import Header from '../components/nav bar/Header'
 import FavData from '../data/favoritesData'
 
 

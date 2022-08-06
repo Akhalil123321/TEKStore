@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/Header'
-import Bar from './components/Bar'
-import Card from './components/Cards'
+import Header from './components/nav bar/Header'
+import Bar from './components/categoryBar/CategoryBar'
+import Card from './components/cards/Cards'
 import LapData from './data/LapData'
 import MobileData from './data/MobileData'
 import ComputerData from './data/ComputerData'
