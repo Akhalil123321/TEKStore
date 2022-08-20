@@ -1,6 +1,6 @@
 # TEK-Store
 demo
-<a href='https://tek-store.netlify.app/'><img src='public/images/site.png' width=1000vw/></a>
+<a href='https://tekstore.pages.dev'><img src='public/images/site.png' width=1000vw/></a>
 
 # Getting Started with Create React App
 
